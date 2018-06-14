@@ -13,7 +13,7 @@ namespace Interview.IGS.Exam.Mahjong
     {
         #region Properties
 
-        public override string Name => "IGS";
+        public override string Name => "IGS-麻將試題";
 
         #endregion Properties
 
@@ -36,7 +36,7 @@ namespace Interview.IGS.Exam.Mahjong
             //評估器進行評估
             evaluator.Evalute(cards);
 
-            // 如果: 評估器評估後結果吻合 以及 結果的數量大於等於 1
+            // 如果: 評估器評估後結果吻合 以及 結果的數量大於等於 2
             if (evaluator.IsMatch && evaluator.Matches.Count >= 2)
             {
                 // 顯示牌組資料
