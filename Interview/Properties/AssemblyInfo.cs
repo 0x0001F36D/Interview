@@ -19,5 +19,5 @@ using System.Runtime.InteropServices;
 // 主要版本 次要版本 組建編號 修訂編號
 //
 // 您可以指定所有的值，或將組建編號或修訂編號設為預設值 指定為預設值: [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.73.6739")]
-[assembly: AssemblyFileVersion("2018.6.14.1033")]
+[assembly: AssemblyVersion("1.0.80.6739")]
+[assembly: AssemblyFileVersion("2018.6.14.1134")]

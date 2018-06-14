@@ -25,7 +25,7 @@ namespace Interview.IGS.Exam.Mahjong.Models.Cards
 
         public static CardFactory Factory { get; } = new CardFactory();
 
-        public string DebugString => $"[{Gid.ToString().PadLeft(3)}]: {this}";
+        public string DebugString => $"[Gid: {Gid.ToString().PadLeft(3)}]: {this}";
 
         public string DisplayName { get; }
 

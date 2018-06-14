@@ -31,7 +31,6 @@ namespace Interview.IGS.Exam.Mahjong.Interpreter.Impl
             }
 
             matches = new List<MatchSet>();
-            bool f = false;
             NCard n, v, m;
             for (int k = 0; k < ordered.Count; k++)
             {
@@ -46,12 +45,11 @@ namespace Interview.IGS.Exam.Mahjong.Interpreter.Impl
                         if (isMatch(n, v, m, out var cards))
                         {
                             matches.Add(new MatchSet(cards));
-                            f = true;
                         }
                     }
                 }
             }
-            return f;
+            return matches.Count > 0;
 
             bool isMatch(Card a, Card b, Card c, out Card[] cards)
             {
