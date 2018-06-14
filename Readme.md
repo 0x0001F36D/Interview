@@ -4,5 +4,5 @@
 > 這是用來存放我所考過的題目，當作紀錄還有反省
 
 ### 項目
- - [隨機把麻將中的一組牌(16張)發至玩家手上，且必須包含兩組順子](/tree/master/Interview/IGS.Exam/Mahjong/)
+ - [隨機把麻將中的一組牌(16張)發至玩家手上，且必須包含兩組順子](/*/Interview/IGS.Exam/Mahjong/)
  
