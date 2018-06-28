@@ -1,15 +1,15 @@
 ﻿// Author: Viyrex(aka Yuyu)
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
-namespace Interview.IGS.Exam.Mahjong.Models.Cards
+namespace Interview.Exam.Mahjong.Models.Cards
 {
     using System.Collections.Generic;
 
-    internal class SCard : Card
+    public sealed class SCard : Card
     {
         #region Constructors
 
-        internal SCard(int gid, int value) : base(gid, CardType.風向及花牌, value)
+        public SCard(int gid, int value) : base(gid, CardType.風向及花牌, value)
         {
         }
 

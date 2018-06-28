@@ -2,14 +2,14 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong.Interpreter
+namespace Interview.Exam.Mahjong.Interpreter
 {
     using System.Collections.Generic;
     using System.Linq;
     using Mahjong.Collections;
     using Mahjong.Models.Cards;
 
-    internal abstract class RuleSet
+    public abstract class RuleSet
     {
         #region Constructors
 

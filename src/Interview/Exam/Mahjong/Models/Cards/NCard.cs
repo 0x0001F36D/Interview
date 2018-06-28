@@ -1,15 +1,16 @@
 ﻿// Author: Viyrex(aka Yuyu)
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
-using System.Collections.Generic;
 
-namespace Interview.IGS.Exam.Mahjong.Models.Cards
+namespace Interview.Exam.Mahjong.Models.Cards
 {
-    internal class NCard : Card
+    using System.Collections.Generic;
+
+    public sealed class NCard : Card
     {
         #region Constructors
 
-        internal NCard(int id, CardType type, int value) : base(id, type, value)
+        public NCard(int id, CardType type, int value) : base(id, type, value)
         {
         }
 

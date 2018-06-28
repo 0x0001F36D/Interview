@@ -2,10 +2,10 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong.Internal
+namespace Interview.Exam.Mahjong.Internal
 {
     using System.Diagnostics;
-    using Interview.IGS.Exam.Mahjong.Models.Cards;
+    using Models.Cards;
 
     internal static class Helper
     {

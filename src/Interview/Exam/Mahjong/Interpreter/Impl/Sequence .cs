@@ -2,14 +2,15 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong.Interpreter.Impl
+namespace Interview.Exam.Mahjong.Interpreter.Impl
 {
     using System.Collections.Generic;
     using System.Linq;
     using Collections;
     using Models.Cards;
+    using Interpreter;
 
-    internal class Sequence : RuleSet
+    public sealed class Sequence : RuleSet
     {
         #region Properties
 

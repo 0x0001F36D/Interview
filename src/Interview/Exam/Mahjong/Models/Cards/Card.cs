@@ -1,12 +1,13 @@
 ﻿// Author: Viyrex(aka Yuyu)
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
-using System;
-using System.Collections.Generic;
 
-namespace Interview.IGS.Exam.Mahjong.Models.Cards
+namespace Interview.Exam.Mahjong.Models.Cards
 {
-    internal abstract class Card : IEquatable<Card>
+    using System;
+    using System.Collections.Generic;
+
+    public abstract class Card : IEquatable<Card>
     {
         #region Constructors
 

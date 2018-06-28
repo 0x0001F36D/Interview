@@ -2,38 +2,24 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong
+namespace Interview.Exam.Mahjong
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Interview.IGS.Exam.Mahjong.Collections;
-    using Interview.IGS.Exam.Mahjong.Models.Cards;
+    using Collections;
+    using Models.Cards;
 
-    internal sealed class CardFactory
+    public sealed class CardFactory
     {
-        #region Constructors
-
         internal CardFactory()
         {
             this.Init();
         }
 
-        #endregion Constructors
-
-        #region Fields
-
         private RandomSet _cards;
 
-        #endregion Fields
-
-        #region Properties
-
         public RandomSet Cards => this._cards;
-
-        #endregion Properties
-
-        #region Methods
 
         public static IEnumerable<Card> Order(IEnumerable<Card> cards)
         {
@@ -81,6 +67,5 @@ namespace Interview.IGS.Exam.Mahjong
             this._cards = new RandomSet(cards);
         }
 
-        #endregion Methods
     }
 }

@@ -2,13 +2,13 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong.Collections
+namespace Interview.Exam.Mahjong.Collections
 {
     using System.Collections;
     using System.Collections.Generic;
     using Models.Cards;
 
-    internal class MatchSet : IReadOnlyCollection<Card>
+    public class MatchSet : IReadOnlyCollection<Card>
     {
         #region Constructors
 
@@ -40,5 +40,27 @@ namespace Interview.IGS.Exam.Mahjong.Collections
         #endregion Methods
 
         public string DebugString => string.Join(", ", this._cardSet);
+
+
+        public Card this[uint index]
+        {
+            get
+            {
+                var enumerator = this._cardSet.GetEnumerator();
+                enumerator.Reset();
+                var i = 0;
+                while (enumerator.MoveNext())
+                {
+                    if(i++ == index)
+                    {
+                        return enumerator.Current;
+                    }
+                }
+
+
+                return default(Card);
+            }
+
+        }
     }
 }

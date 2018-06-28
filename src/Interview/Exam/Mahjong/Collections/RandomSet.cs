@@ -2,19 +2,20 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
-namespace Interview.IGS.Exam.Mahjong.Collections
+namespace Interview.Exam.Mahjong.Collections
 {
-    using System;
-    using System.Collections.Generic;
     using Models.Cards;
 
-    internal sealed class RandomSet
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    public sealed class RandomSet
     {
-        #region Fields
-
-        private readonly LinkedList<Card> _cards;
-
-        #endregion Fields
+        public IEnumerable<Card> Order()
+        {
+            return this._cards.OrderBy(x => x.Weight);
+        }
 
         #region Constructors
 
@@ -29,13 +30,18 @@ namespace Interview.IGS.Exam.Mahjong.Collections
 
         #endregion Constructors
 
-
-
         #region Fields
 
         internal const int MAX = 144;
+        private readonly LinkedList<Card> _cards;
 
         #endregion Fields
+
+        #region Properties
+
+        public int Count => this._cards.Count;
+
+        #endregion Properties
 
         #region Methods
 

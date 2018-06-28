@@ -5,13 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E0B07415-8CD2-4BD6-8429-F444580C9250}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Interview</RootNamespace>
     <AssemblyName>Interview</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>1.0.80.6739</AssemblyVersion>
+    <AssemblyVersion>1.0.108.6754</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,22 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntryPoint.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Main.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Cards\Card.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Cards\CardFactory.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Cards\CardType.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Internal\Helper.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Collections\MatchSet.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Cards\NCard.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Player.cs" />
-    <Compile Include="Launcher.Main.cs" />
-    <Compile Include="Launcher.Instance.cs" />
+    <Compile Include="Exam\Mahjong\Models\Cards\Card.cs" />
+    <Compile Include="Exam\Mahjong\Models\Cards\CardFactory.cs" />
+    <Compile Include="Exam\Mahjong\Models\Cards\CardType.cs" />
+    <Compile Include="Exam\Mahjong\Internal\Helper.cs" />
+    <Compile Include="Exam\Mahjong\Collections\MatchSet.cs" />
+    <Compile Include="Exam\Mahjong\Models\Cards\NCard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Collections\RandomSet.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Interpreter\RuleSet.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Models\Cards\SCard.cs" />
-    <Compile Include="IGS.Exam\Mahjong\Interpreter\Impl\Sequence .cs" />
+    <Compile Include="Exam\Mahjong\Collections\RandomSet.cs" />
+    <Compile Include="Exam\Mahjong\Interpreter\RuleSet.cs" />
+    <Compile Include="Exam\Mahjong\Models\Cards\SCard.cs" />
+    <Compile Include="Exam\Mahjong\Interpreter\Impl\Sequence .cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
